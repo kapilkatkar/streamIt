@@ -1,0 +1,86 @@
+.header {
+  height: 10vh;
+  line-height: 10vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.6)
+  );
+  color: #fff;
+  position: relative;
+  padding: 0 30px 0 30px;
+}
+
+button {
+  background-color: #e50813;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 12px 40px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+div i {
+  quotes: 40px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0 10px;
+}
+ul {
+  display: flex;
+  gap: 15px;
+}
+button {
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+ul a {
+  color: #fff;
+}
+
+.logo {
+  color: #e50813;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .flexSB {
+    display: none;
+  }
+  .account {
+    display: none;
+  }
+  .toggle {
+    display: block;
+    background-color: none;
+    cursor: pointer;
+    background-color: none;
+  }
+  ul a {
+    margin-top: 15px;
+    padding: 0 30px;
+  }
+  .navMenu-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e50813;
+    width: 50%;
+    height: 100vh;
+  }
+}
