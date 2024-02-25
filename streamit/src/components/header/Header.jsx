@@ -1,10 +1,28 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [mobile, setMobile] = useState(false);
-  console.log(mobile);
+  const searchRef = useRef(null);
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+
+  const handleSearchClick = () => {
+    setIsSearchVisible(!isSearchVisible);
+  };
+
+  const handleClickOutside = (event) => {
+    if (searchRef.current && !searchRef.current.contains(event.target)) {
+      setIsSearchVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   window.addEventListener("scroll", function () {
     var header = document.querySelector(".header");
@@ -48,7 +66,25 @@ const Header = () => {
           <Link to={"/contacts"}>Contacts</Link>
         </ul>
         <div className="account flexSB">
-          <i className="fa fa-search"></i>
+          <div className="search-bar" ref={searchRef}>
+            <i
+              className={`fa fa-search ${isSearchVisible ? "active" : ""}`}
+              onClick={handleSearchClick}
+              style={{ marginRight: "8px", cursor: "pointer" }}
+            ></i>
+            {isSearchVisible && (
+              <input
+                type="text"
+                id="searchInput"
+                style={{
+                  color: "black",
+                  marginLeft: "0",
+                  border: "none",
+                  outline: "none",
+                }}
+              />
+            )}
+          </div>
           <i className="fa fa-bell"></i>
           <i className="fa fa-user"></i>
           <button>Subscribe Now</button>

@@ -146,3 +146,26 @@ h4 span {
 .img-btn:hover .change {
   opacity: 1;
 }
+#searchInput {
+  height: 40px;
+  width: 14rem;
+  padding-left: 3rem;
+  position: relative;
+  border: none;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.active {
+  position: absolute;
+  left: -9px;
+  color: black;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  top: 2px;
+  height: 0px !important;
+}
