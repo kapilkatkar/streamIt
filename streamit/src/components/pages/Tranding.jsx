@@ -35,7 +35,7 @@ const Tranding = () => {
           trandingData.map((item) => (
             <div key={item.id} className="card">
               <img src={item.image} className="img img-auto" alt="" />
-              <i className="fas fa-play"></i>
+              <i className="fas fa-play fa-play-header"></i>
               <div className="title">{item.title}</div>
             </div>
           ))}

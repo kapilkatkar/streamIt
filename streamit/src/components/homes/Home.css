@@ -117,4 +117,5 @@ h4 span {
   position: relative;
   display: inline-flex;
   align-items: center;
+  gap: 12px;
 }

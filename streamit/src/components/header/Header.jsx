@@ -5,6 +5,19 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [mobile, setMobile] = useState(false);
   console.log(mobile);
+
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector(".header");
+    var scrollTop = window.scrollY;
+
+    if (scrollTop > 0) {
+      header.style.backgroundImage =
+        "linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6))";
+    } else {
+      header.style.backgroundImage = "none";
+    }
+  });
+
   return (
     <div className="header">
       <nav className="flexSB mobileSB">
