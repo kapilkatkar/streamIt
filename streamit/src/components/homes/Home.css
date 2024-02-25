@@ -10,13 +10,18 @@ h1 {
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
   position: absolute;
-  top: 4rem;
-  padding-left: 4rem;
+  top: 2rem;
+  padding-left: 6rem;
 }
 
 .ratings-stars i {
   color: red;
   border: none;
+  margin-bottom: 25px;
+}
+.ratings-stars {
+  display: flex;
+  gap: 20px;
 }
 
 .fa-star,
@@ -43,6 +48,8 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: absolute;
+  top: 16rem;
+  left: 6rem;
 }
 
 h4 span {
@@ -101,12 +108,6 @@ h4 span {
   position: relative;
 }
 
-.content {
-  position: absolute;
-  top: 30%;
-  left: 8%;
-}
-
 .cast {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -118,4 +119,30 @@ h4 span {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+}
+.cast h4 {
+  padding-top: 5px;
+}
+.palyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.img-btn {
+  position: relative;
+}
+
+.img-btn img {
+  height: 7rem;
+  width: 7rem;
+}
+.change {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.img-btn:hover .change {
+  opacity: 1;
 }

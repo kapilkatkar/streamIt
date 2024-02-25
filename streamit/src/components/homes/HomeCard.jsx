@@ -15,14 +15,16 @@ const HomeCard = ({
         <div className="content">
           <div className="ratings">
             <div className="ratings-stars">
-              <i className="fas fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star-half"></i>
-              <label>{rating}(Imdb)</label>
-              <span className="gp">GP</span>
-              <label>{time}</label>
+              <div>
+                <i className="fas fa-star"></i>
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star-half"></i>
+              </div>
+              <div className="gp-img">
+                <label>{time}</label>
+              </div>
             </div>
             <p className="desc">{desc}</p>
             <div className="cast">
@@ -44,10 +46,11 @@ const HomeCard = ({
             </button>
           </div>
           <div className="palyButton row">
-            <div className="img">
+            <div className="img-btn">
               <img src="/images/play-button.png" alt="" />
+              <img src="./images/play.png" className="change" alt="" />
             </div>
-            WATCH TRAILER
+            <span> WATCH TRAILER</span>
           </div>
         </div>
       </div>
