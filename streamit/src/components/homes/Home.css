@@ -1,1 +1,120 @@
-    
+h1 {
+  margin-top: 80px;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-image: url("../../../public/images/texure.jpg");
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  top: 4rem;
+  padding-left: 4rem;
+}
+
+.ratings-stars i {
+  color: red;
+  border: none;
+}
+
+.fa-star,
+.fa-star-half {
+  padding: 0;
+  margin: 0 5px;
+}
+
+.desc {
+  line-height: 30px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.gp {
+  height: 10px;
+  width: 10px;
+  background-color: gray;
+  padding: 6px;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+}
+
+h4 span {
+  color: red;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.cover-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 88;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.fa-chevron-left {
+  position: absolute;
+  top: 322px;
+  z-index: 6;
+  left: 2%;
+}
+
+.fa-chevron-right {
+  position: absolute;
+  top: 322px;
+  z-index: 6;
+  right: 2%;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+
+.cast {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  border-radius: 0;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}

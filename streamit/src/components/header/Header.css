@@ -10,8 +10,12 @@
     rgba(0, 0, 0, 0.6)
   );
   color: #fff;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  width: 100%;
   padding: 0 30px 0 30px;
+  margin-bottom: 30px;
   margin-bottom: 30px;
 }
 
@@ -25,7 +29,7 @@ button {
   font-size: 17px;
 }
 
-div i {
+.account i {
   quotes: 40px;
   height: 40px;
   padding: 10px;
@@ -81,7 +85,13 @@ ul a {
     top: 0;
     left: 0;
     background-color: #e50813;
-    width: 50%;
+    width: 25%;
     height: 100vh;
+    position: fixed;
+    margin-top: 60px;
+  }
+  .mobileSB {
+    position: fixed;
+    z-index: 5;
   }
 }

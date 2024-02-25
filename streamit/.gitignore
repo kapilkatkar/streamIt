@@ -11,6 +11,7 @@
 #apis
 config.js
 server.js
+dummyData.js
 
 # production
 /build

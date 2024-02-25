@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [mobile, setMobile] = useState(false);
-  const userId = 123;
   console.log(mobile);
   return (
-    <div className="header flexSb">
+    <div className="header">
       <nav className="flexSB mobileSB">
         <div className="logo">SREAMIT</div>
         <div
@@ -28,7 +27,7 @@ const Header = () => {
             setMobile(false);
           }}
         >
-          <Link to={`/homePage/${userId}`}>Home</Link>
+          <Link to={"/homePage"}>Home</Link>
           <Link to={"/series"}>Series</Link>
           <Link to={"/movies"}>Movies</Link>
           <Link to={"/tranding"}>Tranding</Link>

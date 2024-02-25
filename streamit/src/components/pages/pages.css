@@ -5,6 +5,7 @@
   align-items: center;
   gap: 10px;
   position: relative;
+  margin-top: 6rem;
 }
 .img {
   height: 180px !important;

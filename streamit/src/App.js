@@ -12,11 +12,11 @@ import Contact from "./components/pages/Contacts";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header />,
+    element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/homePage/:userId",
+    path: "/homePage",
     element: <Home />,
   },
   {
