@@ -1,0 +1,15 @@
+.slider-container {
+  padding-left: 6rem;
+}
+
+h3 {
+  margin: 30px 0px 10px 0px;
+}
+.fa-chevron-left {
+  position: absolute;
+  top: 73px;
+  left: -3rem;
+}
+.fa-chevron-right {
+  top: 73px;
+}

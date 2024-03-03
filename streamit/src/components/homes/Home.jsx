@@ -6,6 +6,9 @@ import HomeCard from "./HomeCard";
 import { homeData } from "../../dummyData";
 import Header from "../header/Header";
 import "./Home.css";
+import Upcomming from "../sections/upcomming";
+import { upcome, recommended, latest } from "../../dummyData";
+import Footer from "../footer/Footer";
 
 const SampleNextArrow = (props) => {
   const { onClick } = props;
@@ -45,6 +48,34 @@ const Home = ({ items }) => {
             })}
         </Slider>
       </div>
+      <div>
+        <Upcomming items={upcome} title="Upcoming Movies" />
+      </div>
+      <div>
+        <Upcomming items={latest} title="Latest Movies" />
+      </div>
+      <div>
+        <Upcomming items={recommended} title="Recommended Movies" />
+      </div>
+      <div>
+        <Upcomming items={upcome} title="Hollywood Movies" />
+      </div>
+      <div>
+        <Upcomming items={latest} title="Only On StreamIt" />
+      </div>
+      <div>
+        <Upcomming items={recommended} title="Crime Tv Shows" />
+      </div>{" "}
+      <div>
+        <Upcomming items={upcome} title="Exciting Movies" />
+      </div>
+      <div>
+        <Upcomming items={latest} title="Action And Adventures Movies" />
+      </div>
+      <div>
+        <Upcomming items={recommended} title="Top Pics For Kapil" />
+      </div>
+      <Footer></Footer>
     </>
   );
 };

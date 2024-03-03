@@ -20,7 +20,7 @@ const Footer = () => {
               strictly prohibited. All rights reserved.
             </p>
           </div>
-          <div className="box">
+          <div className="box" style={{ marginTop: "-33px" }}>
             <h3>Follow Us</h3>
             <div className="icons">
               <i className="fab fa-facebook-f"></i>
@@ -29,12 +29,20 @@ const Footer = () => {
               <i className="fab fa-instagram"></i>
             </div>
           </div>
-          <div className="box">
+          <div className="box" style={{ marginTop: "-33px" }}>
             <h3>Streamit App</h3>
             <div className="img flexSB">
-              <img src="https://img.icons8.com/color/48/000000/apple-app-store--v3.png" />
+              <img
+                src="https://img.icons8.com/color/48/000000/apple-app-store--v3.png"
+                style={{ width: "35px" }}
+                alt=""
+              />
               <span>App Store</span>
-              <img src="https://img.icons8.com/fluency/48/000000/google-play.png" />
+              <img
+                src="https://img.icons8.com/fluency/48/000000/google-play.png"
+                style={{ width: "35px" }}
+                alt=""
+              />
               <span>Google Play Store</span>
             </div>
           </div>

@@ -86,5 +86,6 @@ ul a {
   .mobileSB {
     position: fixed;
     z-index: 5;
+    gap: 50px;
   }
 }

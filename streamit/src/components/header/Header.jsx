@@ -58,7 +58,7 @@ const Header = () => {
             setMobile(false);
           }}
         >
-          <Link to={"/homePage"}>Home</Link>
+          <Link to={"/"}>Home</Link>
           <Link to={"/series"}>Series</Link>
           <Link to={"/movies"}>Movies</Link>
           <Link to={"/tranding"}>Tranding</Link>
