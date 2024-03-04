@@ -21,3 +21,12 @@ h3 {
 .showMore {
   margin-right: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .fa-chevron-left {
+    display: none;
+  }
+  .slider-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

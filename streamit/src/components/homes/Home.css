@@ -169,3 +169,13 @@ h4 span {
   top: 2px;
   height: 0px !important;
 }
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .img-btn img {
+    height: 4rem;
+    width: 4rem;
+  }
+}
