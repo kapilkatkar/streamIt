@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <Movies />,
   },
   {
-    path: "/tranding",
+    path: "/trending",
     element: <Tranding />,
   },
   {

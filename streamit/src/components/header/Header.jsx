@@ -61,7 +61,7 @@ const Header = () => {
           <Link to={"/"}>Home</Link>
           <Link to={"/series"}>Series</Link>
           <Link to={"/movies"}>Movies</Link>
-          <Link to={"/tranding"}>Tranding</Link>
+          <Link to={"/trending"}>Trending</Link>
           <Link to={"/pricing"}>Pricing</Link>
           <Link to={"/contacts"}>Contacts</Link>
         </ul>

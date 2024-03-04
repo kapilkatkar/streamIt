@@ -13,3 +13,11 @@ h3 {
 .fa-chevron-right {
   top: 73px;
 }
+.showMore-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showMore {
+  margin-right: 20px;
+}

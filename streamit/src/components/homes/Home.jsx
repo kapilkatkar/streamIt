@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HomeCard from "./HomeCard";
-import { homeData } from "../../dummyData";
+import { homeData, trending } from "../../dummyData";
 import Header from "../header/Header";
 import "./Home.css";
 import Upcomming from "../sections/upcomming";
@@ -49,10 +49,10 @@ const Home = ({ items }) => {
         </Slider>
       </div>
       <div>
-        <Upcomming items={upcome} title="Upcoming Movies" />
+        <Upcomming items={upcome} title="trending" />
       </div>
       <div>
-        <Upcomming items={latest} title="Latest Movies" />
+        <Upcomming items={latest} title="series" />
       </div>
       <div>
         <Upcomming items={recommended} title="Recommended Movies" />
@@ -65,7 +65,7 @@ const Home = ({ items }) => {
       </div>
       <div>
         <Upcomming items={recommended} title="Crime Tv Shows" />
-      </div>{" "}
+      </div>
       <div>
         <Upcomming items={upcome} title="Exciting Movies" />
       </div>
