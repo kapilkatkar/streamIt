@@ -70,17 +70,20 @@ const Header = () => {
             <i
               className={`fa fa-search ${isSearchVisible ? "active" : ""}`}
               onClick={handleSearchClick}
-              style={{ marginRight: "8px", cursor: "pointer" }}
+              style={{ marginRight: "8px", cursor: "pointer", color: "white" }}
             ></i>
             {isSearchVisible && (
               <input
                 type="text"
                 id="searchInput"
+                placeholder="Titles, geners, people"
                 style={{
-                  color: "black",
+                  color: "white",
                   marginLeft: "0",
                   border: "none",
                   outline: "none",
+                  backgroundColor: "black",
+                  border: "1px solid silver",
                 }}
               />
             )}
