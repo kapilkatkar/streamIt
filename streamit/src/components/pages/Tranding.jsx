@@ -6,6 +6,7 @@ import {
   X_RapidAPI_Key,
   X_RapidAPI_Host,
 } from "../../config.js";
+import PageUI from "./PageUI.jsx";
 
 const Tranding = () => {
   const [trandingData, setTrandingData] = useState("");
@@ -29,16 +30,8 @@ const Tranding = () => {
 
   return (
     <>
-      <Header></Header>
-      <div className="main-container">
-        {Array.isArray(trandingData) &&
-          trandingData.map((item) => (
-            <div key={item.id} className="card">
-              <img src={item.image} className="img img-auto" alt="" />
-              <i className="fas fa-play fa-play-header"></i>
-              <div className="title">{item.title}</div>
-            </div>
-          ))}
+      <div>
+        <PageUI data={trandingData}></PageUI>
       </div>
     </>
   );
